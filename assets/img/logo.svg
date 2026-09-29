@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" role="img" aria-label="Aimeé Barrera logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9B872"/>
+      <stop offset="1" stop-color="#A9782F"/>
+    </linearGradient>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3FA3A0"/>
+      <stop offset="1" stop-color="#1F7C80"/>
+    </linearGradient>
+  </defs>
+  <!-- sun arc -->
+  <path d="M28 96 A62 62 0 0 1 118 22" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
+  <!-- house -->
+  <path d="M40 92 L96 48 L150 88" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60 78 V100 M132 78 V92" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+  <rect x="88" y="62" width="16" height="16" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <path d="M96 62 V78 M88 70 H104" stroke="url(#g)" stroke-width="2"/>
+  <!-- palm trunk -->
+  <path d="M158 104 C150 84 152 60 170 40" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+  <!-- palm fronds -->
+  <g fill="url(#g)">
+    <path d="M170 40 C186 22 206 26 214 40 C200 34 186 36 170 40Z"/>
+    <path d="M170 40 C160 18 138 16 128 30 C146 26 158 30 170 40Z"/>
+    <path d="M170 40 C186 38 202 50 204 64 C192 52 182 46 170 40Z"/>
+    <path d="M170 40 C156 40 142 50 140 62 C152 52 160 46 170 40Z"/>
+    <path d="M170 40 C172 26 184 12 198 14 C186 20 178 28 170 40Z"/>
+  </g>
+  <!-- waves -->
+  <path d="M22 108 C48 96 70 118 98 108 C126 98 146 118 176 108 C190 104 200 104 208 108 L208 118 C198 114 190 114 176 118 C146 128 126 108 98 118 C70 128 48 106 22 118Z" fill="url(#t)"/>
+  <path d="M34 124 C58 114 80 132 106 124 C132 116 152 130 178 124 L178 130 C152 136 132 122 106 130 C80 138 58 120 34 130Z" fill="url(#t)" opacity=".7"/>
+</svg>
