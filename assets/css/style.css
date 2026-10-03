@@ -62,7 +62,7 @@ h3{font-size:1.5rem}
 /* hero */
 .hero{position:relative;background:var(--cream);overflow:hidden}
 .hero::before{content:"";position:absolute;inset:14px;border:1px solid var(--line);pointer-events:none}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;min-height:640px;padding:70px 0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;min-height:640px;padding-top:70px;padding-bottom:70px}
 .hero h1{margin-bottom:10px}
 .hero .script{margin:18px 0 8px}
 .hero .lead{margin-top:14px}
@@ -195,7 +195,7 @@ form.contact{background:#fff;border:1px solid var(--line);border-radius:var(--ra
   .menu a{font-size:1rem}
   .burger{display:block}
   .hero-grid,.split,.contact-grid,.dest-full{grid-template-columns:1fr}
-  .hero-grid{padding:50px 0;min-height:0}
+  .hero-grid{padding-top:50px;padding-bottom:50px;min-height:0}
   .portrait{justify-self:center;margin:10px auto 0}
   .split.rev>:first-child,.dest-full:nth-child(even) .photo{order:0}
   .cards,.cards.four,.steps,.cred{grid-template-columns:1fr 1fr}
@@ -224,6 +224,23 @@ form.contact{background:#fff;border:1px solid var(--line);border-radius:var(--ra
   .nav-right{gap:6px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+/* ---- Property grid (cards) ---- */
+.property-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.property-card{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:.25s}
+.property-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(90,20,40,.12)}
+.property-card-img{aspect-ratio:4/3;background-size:cover;background-position:center;background-color:var(--cream)}
+.property-card-body{padding:22px}
+.property-card-body .tag-row{margin-top:0;margin-bottom:12px;gap:6px}
+.property-card-body .tag{padding:5px 10px;font-size:.62rem}
+.property-card-body h3{font-size:1.2rem;margin-bottom:4px}
+.property-card-loc{font-size:.82rem;color:var(--muted);margin-bottom:14px}
+.property-card-price{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--burgundy);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.property-card-was{font-family:var(--sans);font-size:.78rem;color:var(--muted);text-decoration:line-through;font-weight:400}
+.back-link{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--burgundy);text-decoration:none;margin-bottom:20px}
+.back-link:hover{color:var(--gold)}
+@media(max-width:980px){.property-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.property-grid{grid-template-columns:1fr}}
 
 /* ---- Property listing ---- */
 .property{display:grid;grid-template-columns:1.3fr 1fr;gap:44px;align-items:start;margin-top:44px}
