@@ -235,6 +235,9 @@ form.contact{background:#fff;border:1px solid var(--line);border-radius:var(--ra
 .property-card-body .tag{padding:5px 10px;font-size:.62rem}
 .property-card-body h3{font-size:1.2rem;margin-bottom:4px}
 .property-card-loc{font-size:.82rem;color:var(--muted);margin-bottom:14px}
+.property-card-specs{display:flex;gap:16px;align-items:center;font-size:.82rem;color:var(--muted);margin-bottom:14px}
+.property-card-specs .ico-sm{display:inline-flex;align-items:center;gap:5px}
+.property-card-specs .ico-sm svg{width:16px;height:16px;color:var(--gold)}
 .property-card-price{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--burgundy);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .property-card-was{font-family:var(--sans);font-size:.78rem;color:var(--muted);text-decoration:line-through;font-weight:400}
 .back-link{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--burgundy);text-decoration:none;margin-bottom:20px}
